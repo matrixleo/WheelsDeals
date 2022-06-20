@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Listing;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,11 +13,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//All Listings
 Route::get('/', function () {
-    return view('welcome');
+    return view('listings', [
+        'heading' => 'Latest Listing',
+        'listings' => Listing::all()
+    ]);
 });
-
-Route::get('/posts/{id}', function ($id){
-    return response('Posts  ' . $id);
+//Single Listing
+Route::get('/listings/id', function($id){
+    return view('listing', [
+        'listing' => Listing::find($id)
+    ]);
 });
