@@ -2,7 +2,7 @@
             class="relative h-72 bg-laravel flex flex-col justify-center align-center text-center space-y-4 mb-4"
                 style="
                 background-color: rgba(0, 0, 0, 0.8);
-                background-image: url('images/cover.jpg')"
+                background-image: url('images/cover2.jpeg')"
                 id="hero"
             >
             <div
@@ -11,9 +11,7 @@
             ></div>
 
             <div class="z-10">
-                <h1 class="text-6xl font-bold uppercase text-white">
-                    WHEELS & DEALS
-                </h1>
+                <img class="text-6xl font-bold uppercase text-white" id="heroimg" src="{{asset('images/logo-blue.png')}}" />
                 <p class="text-2xl text-gray-200 font-bold my-4">
                     Find or post newst cars
                 </p>

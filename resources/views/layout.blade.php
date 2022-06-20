@@ -14,23 +14,13 @@
         />
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            laravel: "#ef3b2d",
-                        },
-                    },
-                },
-            };
-        </script>
+        
         <title>WHEELS & DEALS | Find your best car</title>
     </head>
     <body class="mb-48">
-        <nav class="flex justify-between items-center opacity-90" id="nav">
+        <nav class="flex justify-between items-center opacity-90 " id="nav">
             <a href="index.html" id="navbar">
-                <img class="w-23" src="{{asset('images/logo.png')}}" alt="" class="logo"/>
+                <img class="w-23" src="{{asset('images/logo-white.png')}}" alt="" class="logo"/>
             </a>
             <ul class="flex space-x-6 mr-6 text-lg">
                 <li>
@@ -51,16 +41,10 @@
         </main>
 
         <footer
-            class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-90 md:justify-center"
+            class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-70 md:justify-center"
             id="footer"        
             >
             <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
-
-            <a
-                href="create.html"
-                class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
-                >Post Car</a
-            >
         </footer>
     </body>
 </html>

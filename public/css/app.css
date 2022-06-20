@@ -1,23 +1,42 @@
+body{
+    background-color: #BBC8DE;
+}
 #nav{
 background-color: rgba(128, 128, 128, 0.8);
+background-image: linear-gradient( #192E41,#BBC8DE);
+
 }
 #navbar{
     margin: 0.5rem;
 }
 .w-23{
     width: 17rem;
-    border-radius: 15px;
 }
 #footer{
-    background-color: grey;
+    height: 4rem;
+    background-color: #0C2D48;
+    background-image: linear-gradient(#BBC8DE,#192E41 );
 }
+
 #hero{
     
     min-height: 600px;
+
+    opacity: 90%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
 }
 #carsphoto{
     background-size: 100%;
+}
+.z-10{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+#heroimg{
+    width: 50%;
+    opacity: 90%;
 }
