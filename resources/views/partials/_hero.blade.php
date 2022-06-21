@@ -1,5 +1,5 @@
 <section
-            class="relative h-72 bg-laravel flex flex-col justify-center align-center text-center space-y-4 mb-4"
+            class="relative h-72 bg-laravel flex flex-col rounded-md  justify-center align-center text-center space-y-4 mb-4"
                 style="
                 background-color: rgba(0, 0, 0, 0.8);
                 background-image: url('images/cover2.jpeg')"

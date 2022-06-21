@@ -17,31 +17,31 @@
         
         <title>WHEELS & DEALS | Find your best car</title>
     </head>
-    <body class="mb-48">
+    <body>
         <nav class="flex justify-between items-center opacity-90 " id="nav">
-            <a href="index.html" id="navbar">
+            <a href="/" id="navbar">
                 <img class="w-23" src="{{asset('images/logo-white.png')}}" alt="" class="logo"/>
             </a>
             <ul class="flex space-x-6 mr-6 text-lg">
                 <li>
-                    <a href="register.html" class="hover:text-laravel"
-                        ><i class="fa-solid fa-user-plus"></i> Register</a
+                    <a href="register.html" class="hover:text-laravel text-white"
+                        ><i class="fa-solid fa-user-plus text-white"></i> Register</a
                     >
                 </li>
                 <li>
-                    <a href="login.html" class="hover:text-laravel"
-                        ><i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <a href="login.html" class="hover:text-laravel text-white"
+                        ><i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
                         Login</a
                     >
                 </li>
             </ul>
         </nav>
-        <main>
-        @yield('content')
-        </main>
+        <main class="mx-14">
+        {{$slot}}
+        </main >
 
         <footer
-            class="fixed bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-70 md:justify-center"
+            class="bottom-0 left-0 w-full flex items-center justify-start font-bold bg-laravel text-white h-24 mt-24 opacity-70 md:justify-center"
             id="footer"        
             >
             <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
