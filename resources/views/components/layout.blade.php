@@ -4,7 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="images/smalllogo.png" />
+        <link rel="icon" href="images/logo.png" />
+        <script src="//unpkg.com/alpinejs" defer></script>
+        
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -14,7 +16,17 @@
         />
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script src="https://cdn.tailwindcss.com"></script>
-        
+        <script>
+            tailwind.config ={
+                theme: {
+                    extend: {
+                        colors:{
+                            laravel: #BBC8DE;
+                        }
+                    }
+                }
+            }
+        </script>
         <title>WHEELS & DEALS | Find your best car</title>
     </head>
     <body>
@@ -45,6 +57,13 @@
             id="footer"        
             >
             <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
+            
+            <a
+                href="/listings/create"
+                class="top-1/3 right-16 rounded bg-black text-white py-2 px-5"
+                >Post Job</a
+            >
         </footer>
+        <x-flash-message />
     </body>
 </html>
