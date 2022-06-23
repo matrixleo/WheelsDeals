@@ -3,12 +3,12 @@
         <x-card class=" p-10 rounded max-w-lg mx-auto mt-24">
             <header class="text-center">
                 <h2 class="text-2xl font-bold uppercase mb-1">
-                    Create a Gig
+                    Create a Post
                 </h2>
-                <p class="mb-4">Post a gig to find a developer</p>
+                <p class="mb-4">Post the car you want to sell</p>
             </header>
 
-            <form method="POST" action="/listings">
+            <form method="POST" action="/listings" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-6">
                     <label
@@ -110,7 +110,19 @@
                     @enderror
                 </div>
 
-                
+                <div class="mb-6">
+                    <label for="logo" class="inline-block text-lg mb-2">
+                        Car Photo
+                    </label>
+                    <input
+                        type="file"
+                        class="border border-gray-200 rounded p-2 w-full"
+                        name="logo"
+                    />
+                    @error('logo')
+                    <p class="text-red-600 text-xs mt-1">{{$message}}</p>
+                    @enderror
+                </div>
 
                 <div class="mb-6">
                     <label
@@ -126,12 +138,12 @@
                         placeholder="Specifications, Pros, Cons, etc"
                         value="{{old('description')}}"
                     ></textarea>
-                    @error('description ')
+                    @error('description')
                     <p class="text-red-600 text-xs mt-1">{{$message}}</p>
                     @enderror
                 </div>
 
-                <div class="mb-6">
+                <div class="mb-4">
                     <button
                         class="bg-laravel text-black rounded py-2 px-4 hover:bg-slate-600"
                     >
