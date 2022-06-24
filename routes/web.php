@@ -14,20 +14,22 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//All Listings
+//All Post
 Route::get('/', [ListingController::class, 'index']);
 
 
-//Create Listing
+//Create Post
 Route::get('/listings/create', [ListingController::class, 'create']);
 
-//Single Listing
+//Single Post
 Route::POST('/listings', [ListingController::class, 'store']);
 
+//Edit Post
+Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
 
+//Submit Edit Form
+Route::put('/listings/{listing}', [ListingController::class, 'update']);
 
-
-
-//Single Listing
+//Single Post
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
