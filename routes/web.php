@@ -15,9 +15,9 @@ use App\Http\Controllers\ListingController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 //All Post
 Route::get('/', [ListingController::class, 'index']);
-
 
 //Create Post
 Route::get('/listings/create', [ListingController::class, 'create'])->middleware('auth');
@@ -34,6 +34,9 @@ Route::put('/listings/{listing}', [ListingController::class, 'update'])->middlew
 //Delete Post
 Route::delete('/listings/{listing}', [ListingController::class, 'destroy'])->middleware('auth');
 
+//Manage Listing
+Route::get('/listings/manage', [ListingController::class, 'manage'])->middleware('auth');
+
 //Single Post
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
@@ -49,5 +52,5 @@ Route::post('/logout',[UserController::class, 'logout'])->middleware('auth');
 //Show Log In
 Route::get('/login', [UserController::class, 'login'])->name('login')->middleware('guest');
 
-// Log In User
+//Log In User
 Route::post('/users/authenticate', [UserController::class, 'authenticate']);
