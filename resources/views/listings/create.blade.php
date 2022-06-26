@@ -1,6 +1,6 @@
 
 <x-layout>
-        <x-card class=" p-10 rounded max-w-lg mx-auto mt-24">
+        <x-card class=" p-10 rounded max-w-lg mx-auto mt-20">
             <header class="text-center">
                 <h2 class="text-2xl font-bold uppercase mb-1">
                     Create a Post

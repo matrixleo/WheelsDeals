@@ -16,7 +16,7 @@ use App\Http\Controllers\ListingController;
 |
 */
 
-//All Post
+//All Posts
 Route::get('/', [ListingController::class, 'index']);
 
 //Create Post

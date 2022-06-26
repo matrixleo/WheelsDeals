@@ -17,9 +17,9 @@
                 </p>
                 <div>
                     <a
-                        href="register.html"
+                        href="/listings/create"
                         class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black"
-                        >Sign Up to Post a Car</a
+                        >Post a Car</a
                     >
                 </div>
             </div>

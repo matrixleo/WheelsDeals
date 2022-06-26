@@ -16,24 +16,15 @@
         />
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config ={
-                theme: {
-                    extend: {
-                        colors:{
-                            laravel: #BBC8DE;
-                        }
-                    }
-                }
-            }
-        </script>
         <title>WHEELS & DEALS | Find your best car</title>
     </head>
     <body>
         <nav class="flex justify-between items-center opacity-90 " id="nav">
             <a href="/" id="navbar">
                 <img class="w-23" src="{{asset('images/logo-white.png')}}" alt="" class="logo"/>
-            </a>
+            </a> 
+
+            
             <ul class="flex space-x-6 mr-6 text-lg">
                 @auth
                 <li>
