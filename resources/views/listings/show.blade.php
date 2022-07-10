@@ -1,3 +1,4 @@
+
 <x-layout>
 <a href="/" class="inline-block text-white ml-4 "
 ><i class="fa-solid fa-arrow-left text-white"></i> Back

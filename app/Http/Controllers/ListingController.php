@@ -67,7 +67,7 @@ class ListingController extends Controller
             'location'=>'required',
             'website'=>'required',
             'email'=>['required', 'email'],
-            'description'=>'required'
+            'description'=>'required',
         ]);
 
         if($request->hasFile('logo')){

@@ -19,7 +19,7 @@
         <title>WHEELS & DEALS | Find your best car</title>
     </head>
     <body>
-        <nav class="flex justify-between items-center opacity-90 " id="nav">
+        <nav class="flex justify-between items-center opacity-90 text-white" id="nav">
             <a href="/" id="navbar">
                 <img class="w-23" src="{{asset('images/logo-white.png')}}" alt="" class="logo"/>
             </a> 
@@ -28,7 +28,7 @@
             <ul class="flex space-x-6 mr-6 text-lg">
                 @auth
                 <li>
-                    <span class="font-bold uppercase">
+                    <span class="font-bold">
                         Welcome {{auth()->user()->name}}
                     </span>
                 </li>
@@ -47,6 +47,7 @@
                         ><i class="fa-solid fa-user-plus text-white"></i> Register</a
                     >
                 </li>
+
                 <li>
                     <a href="/login" class="hover:text-laravel text-white"
                         ><i class="fa-solid fa-arrow-right-to-bracket text-white"></i>
