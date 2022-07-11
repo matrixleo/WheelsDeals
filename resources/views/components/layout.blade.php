@@ -61,17 +61,14 @@
         {{$slot}}
         </main >
 
-        <footer
-            class="bottom-0 left-0 w-full flex items-center justify-start  bg-laravel text-white h-24 mt-24 opacity-70 pl- md:justify-evenly"
-            id="footer"        
-            >
-            <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
-            
-            <a
-                href="/listings/create"
-                class="top-1/3 right-16 rounded bg-black text-white py-2 px-5"
-                >Post </a
-            >
+        <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="/" class="hover:underline">Wheels & Deals™</a>. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="/listings/create" class="mr-4 hover:underline md:mr-6 ">Post a Car</a>
+                </li>
+            </ul>
         </footer>
         <x-flash-message />
     </body>
